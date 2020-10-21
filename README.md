@@ -18,7 +18,7 @@ Download and install [Docker](https://www.docker.com/get-started)
 
 ```bash
 cd lux-binder
-docker build -t lux .
+docker build -t lux -f Dockerfile-Lux .
 docker run -p 8888:8888 lux
 ```
 
@@ -39,4 +39,4 @@ Please follow the notebook exercises:
 - `3-Exporting-Widget`: Learn how to export a visualization of interest into code.
 - `4-Data-Playground`: Explore different dataset using Lux.
 
-At the end of the session, please fill out this quick survey to help us improve Lux.
+At the end of the session, please fill out [this](https://docs.google.com/forms/d/e/1FAIpQLSf7C7DuslHD7sVY8dt1XZ_66VmT0AHAgLuZAFnPn0VvmQ6Z3g/viewform?usp=sf_link) quick survey to help us improve Lux.
