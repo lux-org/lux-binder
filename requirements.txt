@@ -1,3 +1,2 @@
-scikit-learn==0.22
-git+https://github.com/lux-org/lux
-git+https://github.com/lux-org/lux-widget
+lux-api>=0.2.0
+lux-widget==0.1.0
