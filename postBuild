@@ -1,2 +1,2 @@
-jupyter nbextension install --py --user luxWidget
-jupyter nbextension enable --py --user luxWidget
+jupyter nbextension install --py --user luxwidget
+jupyter nbextension enable --py --user luxwidget
