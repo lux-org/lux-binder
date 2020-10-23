@@ -1,3 +1,2 @@
 lux-api>=0.2.0
 lux-widget==0.1.0
-git+https://github.com/lux-org/lux-logger.git
