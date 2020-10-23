@@ -1,11 +1,19 @@
 FROM ubuntu:latest
-RUN apt-get update && apt-get -y update
+RUN apt-get update && apt-get -y update 
+RUN apt-get install -y git
 RUN apt-get install -y build-essential python3.6 python3-pip python3-dev
 RUN pip3 -q install pip --upgrade
 
 RUN pip install lux-api
 RUN jupyter nbextension install --py luxwidget
 RUN jupyter nbextension enable --py luxwidget
+
+
+RUN git clone https://github.com/lux-org/lux-logger.git
+WORKDIR lux-logger
+RUN pip install .
+RUN jupyter nbextension install --user logger
+RUN jupyter nbextension enable  --user logger/static/main
 
 RUN mkdir src
 WORKDIR src/
