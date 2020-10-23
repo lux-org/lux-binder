@@ -2,5 +2,5 @@ jupyter nbextension install --py --user luxwidget
 jupyter nbextension enable --py --user luxwidget
 
 
-jupyter nbextension install --symlink logger
-jupyter nbextension enable logger/static/main
+jupyter nbextension install --py --user logger
+jupyter nbextension enable  --py --user logger/static/main
