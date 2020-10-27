@@ -3,7 +3,7 @@ Excercise 1:
 df.intent = ["MedianDebt","Region=New England|Southeast|Far West"]
 df
 
----------------------------------------------------------------------------------------------------------
+---------------------------------------------
 
 Excercise 2.1: 
 
@@ -24,9 +24,3 @@ for attribute in ['Weight','Age','Height']:
     vcLst.append(vis)
 vc = VisList(vcLst,df)
 vc
----------------------------------------------------------------------------------------------------------
-
-Excercise 3: 
-
-gdp_footprint = df.exported[0]
-gdp_footprint
