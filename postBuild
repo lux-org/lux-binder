@@ -1,5 +1,13 @@
-jupyter nbextension install --py --user luxwidget
-jupyter nbextension enable --py --user luxwidget
+apt-get update && apt-get -y update 
+apt-get install -y git
+apt-get install -y build-essential python3.6 python3-pip python3-dev
+pip3 -q install pip --upgrade
+
+pip install git+git://github.com/lux-org/lux-widget.git
+pip install git+git://github.com/lux-org/lux.git
+jupyter nbextension install --py luxwidget
+jupyter nbextension enable --py luxwidget
+
 
 
 git clone https://github.com/lux-org/lux-logger.git
