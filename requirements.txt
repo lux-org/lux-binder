@@ -1,2 +1,2 @@
-lux-api>=0.2.0
-lux-widget==0.1.0
+git+git://github.com/lux-org/lux.git
+git+git://github.com/lux-org/lux-widget.git

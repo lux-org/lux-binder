@@ -6,13 +6,13 @@ This repository contains a collection of notebooks on how to use Lux.
 - [exercise/](https://github.com/lux-org/lux-binder/tree/master/exercise): Hands-on excercise introducing key features of Lux with a data playground
 - [tutorial/](https://github.com/lux-org/lux-binder/tree/master/tutorial): Complete tutorial series introducing basic to advanced features in Lux
 
+## RISE Camp Instructions
+
 You can clone this repo to follow along the instructions in the notebooks.
 
 ```bash
 git clone https://github.com/lux-org/lux-binder.git
 ```
-
-## RISE Camp Instructions
 
 Download and install [Docker](https://www.docker.com/get-started)
 
