@@ -5,8 +5,8 @@ pip3 -q install pip --upgrade
 
 pip install git+git://github.com/lux-org/lux-widget.git
 pip install git+git://github.com/lux-org/lux.git
-jupyter nbextension install --py luxwidget
-jupyter nbextension enable --py luxwidget
+jupyter nbextension install --py --user luxwidget
+jupyter nbextension enable --py --user luxwidget
 
 
 
