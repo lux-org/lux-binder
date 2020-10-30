@@ -12,7 +12,8 @@ Vis(["Season","AthleteRegion"],df)
 ---------------------------------------------
 Excercise 2.2: 
 
-VisList(["Year",['Weight','Age','Height']],df)
+physical_characteristics = ["Age", "Weight","Height"]
+VisList(["Year", physical_characteristics],df)
 
 ------------------
 Bonus:
