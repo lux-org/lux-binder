@@ -36,12 +36,11 @@ Visit [localhost:8890](http://localhost:8890/) in your browser to access the Jup
 
 
 Once you have your Jupyter opened, you should see a list of notebooks in the `exercise/` directory.
-`0-Lux-Overview.ipynb` is what we just went through in the demo walkthrough.
-Please follow the notebook exercises:
+`0-Lux-Overview.ipynb` is the demo walkthrough. You can also try out these hands-on exercises:
 
 - `1-Specify-Intent`: Learn how to specify your analysis intent in Lux to steer the recommended visualizations.
 - `2-Quick-Vis`: Learn how to quickly create visualization or collections of visualization in Lux.
 - `3-Exporting-Widget`: Learn how to export a visualization of interest into code.
 - `4-Data-Playground`: Explore different dataset using Lux.
 
-At the end of the session, please fill out [this](https://docs.google.com/forms/d/e/1FAIpQLSf7C7DuslHD7sVY8dt1XZ_66VmT0AHAgLuZAFnPn0VvmQ6Z3g/viewform?usp=sf_link) quick survey to help us improve Lux.
+Please fill out [this](https://docs.google.com/forms/d/e/1FAIpQLSf7C7DuslHD7sVY8dt1XZ_66VmT0AHAgLuZAFnPn0VvmQ6Z3g/viewform?usp=sf_link) quick survey to help us improve Lux.
