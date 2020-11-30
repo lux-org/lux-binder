@@ -1,0 +1,2 @@
+git+git://github.com/lux-org/lux-widget.git
+git+git://github.com/lux-org/lux.git
