@@ -1,3 +1,6 @@
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter labextension install luxwidget
+
 jupyter nbextension install --py --user luxwidget
 jupyter nbextension enable --py --user luxwidget
 
