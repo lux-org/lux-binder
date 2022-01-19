@@ -3,9 +3,3 @@ jupyter nbextension enable --py --user luxwidget
 
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter lab build
-
-git clone https://github.com/lux-org/lux-logger.git
-cd lux-logger
-pip install .
-jupyter nbextension install --user logger
-jupyter nbextension enable  --user logger/static/main

@@ -9,13 +9,6 @@ RUN pip install git+git://github.com/lux-org/lux.git
 RUN jupyter nbextension install --py luxwidget
 RUN jupyter nbextension enable --py luxwidget
 
-
-RUN git clone https://github.com/lux-org/lux-logger.git
-WORKDIR lux-logger
-RUN pip install .
-RUN jupyter nbextension install --user logger
-RUN jupyter nbextension enable  --user logger/static/main
-
 RUN mkdir src
 WORKDIR src/
 COPY . .

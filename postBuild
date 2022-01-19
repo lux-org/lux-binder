@@ -4,12 +4,6 @@ jupyter nbextension enable --py --user luxwidget
 jupyter labextension install @jupyter-widgets/jupyterlab-manager --minimize=False
 jupyter labextension install luxwidget
 
-git clone https://github.com/lux-org/lux-logger.git
-cd lux-logger
-pip install .
-jupyter nbextension install --user logger
-jupyter nbextension enable  --user logger/static/main
-
 # Temporary Fix (#372)
 cd /srv/conda/envs/notebook/lib/python3.7/site-packages/luxwidget/
 mkdir labextension
