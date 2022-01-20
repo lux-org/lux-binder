@@ -1,0 +1,14 @@
+# latest docker compose version
+version: '3'
+
+services:
+  binder:
+    build:
+      context: .
+      dockerfile: Dockerfile.binder-like
+    image: binder
+    command: jupyter notebook --ip 0.0.0.0 --port 8888 .
+    volumes:
+      - ..:/home/jovyan/work:z
+    ports:
+      - "8888:8888"
