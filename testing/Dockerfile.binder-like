@@ -1,0 +1,34 @@
+FROM python:3.9-slim
+
+RUN apt update
+RUN apt install -y nodejs npm
+
+# install the notebook package
+RUN pip install --no-cache --upgrade pip && \
+    pip install --no-cache notebook jupyterlab
+
+
+# create user with a home directory
+ENV NB_USER "jovyan"
+ENV NB_UID "1000"
+ENV USER ${NB_USER}
+ENV HOME /home/${NB_USER}
+
+RUN adduser --disabled-password \
+    --gecos "Default user" \
+    --uid ${NB_UID} \
+    ${NB_USER}
+WORKDIR ${HOME}
+USER ${USER}
+
+RUN pip install lux-api pandas<1.3.0
+
+RUN jupyter nbextension install --py --user luxwidget && \
+    jupyter nbextension enable --py --user luxwidget
+
+ENV JUPYTERLAB_DIR ~/.jupyter
+RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager --minimize=False && \
+    jupyter labextension install luxwidget
+
+
+CMD jupyter notebook --ip 0.0.0.0 --port 8888 .
