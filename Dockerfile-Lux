@@ -4,8 +4,8 @@ RUN apt-get install -y git
 RUN apt-get install -y build-essential python3.6 python3-pip python3-dev
 RUN pip3 -q install pip --upgrade
 
-RUN pip install git+git://github.com/lux-org/lux-widget.git
-RUN pip install git+git://github.com/lux-org/lux.git
+RUN pip install https://github.com/lux-org/lux-widget.git
+RUN pip install https://github.com/lux-org/lux.git
 RUN jupyter nbextension install --py luxwidget
 RUN jupyter nbextension enable --py luxwidget
 
